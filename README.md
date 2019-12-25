@@ -8,7 +8,7 @@
 
 实例：
 
-![1576900724239](C:\Users\10475\AppData\Roaming\Typora\typora-user-images\1576900724239.png)
+![1576900724239.png](https://i.loli.net/2019/12/25/L9bO1iXyeht42xc.png)
 
 访问：<http://localhost:8080/index.html>
 
