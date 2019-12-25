@@ -1,0 +1,14 @@
+spring:
+
+  freemarker:
+    suffix: .html
+
+  mvc:
+    # 告诉springboot应该以什么样的方式去寻找资源。
+    # 默认配置为 /*
+    # 换句话说，只有静态资源满足什么样的匹配条件，Spring Boot才会处理静态资源请求，我们也可配置成 /user/**,这样我们必须输入/user/index.html才能访问到这些目录下的资源
+    static-path-pattern: /**
+
+#  resources:
+#    # 这个配置项是告诉springboot去哪找资源，根据前后关系确定优先级，也就是说如果/META-INF/resources/目录和/resources都有一个index.html，那么根据默认的优先级，会去访问/mystatic/下的资源。
+#    static-locations: classpath:/mystatic/, classpath:/static/js/, classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/

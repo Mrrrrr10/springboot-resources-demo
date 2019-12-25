@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Node OAuth2 Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<a id="loginWithGithub">templates Login with GitHub</a>
+
+<script type="text/javascript" src="/templates/static/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $("#loginWithGithub").on("click", function () {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:8080/user/oauth/login",
+            success: function (data) {
+                window.location.href = data;
+            }
+        });
+    })
+</script>
+
+</body>
+
+</html>
