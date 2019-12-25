@@ -37,7 +37,7 @@ public class IndexController {
 
 实例：
 
-![1576901818595](C:\Users\10475\AppData\Roaming\Typora\typora-user-images\1576901818595.png)
+![1576901818595.png](https://i.loli.net/2019/12/25/hsEJMTpg8kDn19U.png)
 
 依赖：
 
@@ -60,7 +60,7 @@ spring:
 
 1、直接访问是访问不到的
 
-![1576902024838](C:\Users\10475\AppData\Roaming\Typora\typora-user-images\1576902024838.png)
+![1576902024838.png](https://i.loli.net/2019/12/25/DY9WK7lpr4R2udX.png)
 
 2、需要通过请求服务器，在转到动态画面。 **<font color=red>注意这里的return不可以带.html，前面我们对freemaker进行的配置中给他添加了后缀名为.html。</font>**
 
@@ -73,7 +73,7 @@ public String getTemplatesIndex(){
 
 
 
-![1576902110953](C:\Users\10475\AppData\Roaming\Typora\typora-user-images\1576902110953.png)
+![1576902110953.png](https://i.loli.net/2019/12/25/1Xdb3QSOVPhYvWt.png)
 
 ##### 4、方法四：
 
@@ -88,7 +88,7 @@ public String getTemplatesIndex(){
 
 实例：
 
-![1576902479926](C:\Users\10475\AppData\Roaming\Typora\typora-user-images\1576902479926.png)
+![1576902479926.png](https://i.loli.net/2019/12/25/ATJMNoVtq72nFj6.png)
 
 他们的根路径都是“/”
 
@@ -98,7 +98,7 @@ public String getTemplatesIndex(){
 
 既然如此，万一这些目录下面的文件重名了会如何执行呢？他们之间是有先后顺序的，<font color=red>**这个顺序默认是/META-INF/resources>resources>static>public**</font>
 
-![1576902721357](C:\Users\10475\AppData\Roaming\Typora\typora-user-images\1576902721357.png)
+![1576902721357.png](https://i.loli.net/2019/12/25/9aeChuMOo6gUKr4.png)
 
 ##### 5、方法五：
 
@@ -119,13 +119,12 @@ spring:
 
 实例：
 
-![1576902903337](C:\Users\10475\AppData\Roaming\Typora\typora-user-images\1576902903337.png)
-
+![1576902903337.png](https://i.loli.net/2019/12/25/PewIKgr1MoWYa6D.png)
 
 
 访问：
 
-![1576903569618](C:\Users\10475\AppData\Roaming\Typora\typora-user-images\1576903569618.png)
+![1576903569618.png](https://i.loli.net/2019/12/25/X3wkSPVhJLIgjT6.png)
 
 ##### 6、方法六：
 
